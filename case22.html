@@ -1,0 +1,2043 @@
+<!DOCTYPE html>
+<html>
+<style>
+	@font-face {
+    font-family: 'NotoSerifKR';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NotoSerifKR.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	background-color: black;
+	margin-right: 20;
+}
+
+h1{
+	position: fixed;
+	left:50px;
+	font-size: 30pt;
+	font-family: NotoSerifKR;
+	color:white;
+  z-index: 1;
+}
+
+.index{
+	position: fixed;
+	top: 80px;
+	left:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+}
+
+
+.return{
+	position: fixed;
+	top: 25px;
+	right:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+	cursor: pointer;
+}
+
+
+
+
+.switch{
+	position: fixed;
+	top: 60px;
+	right:50px;
+	font-size: 15pt;
+	font-family: NotoSerifKR;
+	color:white;
+	cursor: pointer;
+}
+
+p{
+  font-size: 15pt;
+  font-family: NotoSerifKR;
+  color: white
+}
+
+
+a { 
+	text-decoration:none;
+}
+
+a:link {
+  color : black;
+}
+
+a:visited {
+  color : black;
+}
+a:hover {
+  color : white;
+}
+/*a:active {
+  color : green;
+}
+*/
+
+.re:link {
+  color : white;
+}
+
+.re:visited {
+  color : white;
+}
+
+
+#mydiv1-1 {
+  position: absolute;
+  top:280px;
+  left:150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv1-2 {
+  position: absolute;
+  top:340px;
+  left:180px;
+  z-index: 99;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-3 {
+  position: absolute;
+  top:420px;
+  left:200px;
+  z-index: 98;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-4 {
+  position: absolute;
+  top:480px;
+  left:100px;
+  z-index: 97;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-5 {
+  position: absolute;
+  top:540px;
+  left:230px;
+  z-index: 96;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-6 {
+  position: absolute;
+  top:600px;
+  left:100px;
+  z-index: 95;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-7 {
+  position: absolute;
+  top:660px;
+  left:250px;
+  z-index: 94;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-8 {
+  position: absolute;
+  top:720px;
+  left:100px;
+  z-index: 93;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv1-9 {
+  position: absolute;
+  top:780px;
+  left:70px;
+  z-index: 92;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*----------------중앙------------*/
+
+#mydiv2-1 {
+  position: absolute;
+  top:280px;
+  left:1100px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-2 {
+  position: absolute;
+  top:340px;
+  left:1100px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-2:hover{
+	z-index: 100;
+}
+
+
+#mydiv2-3 {
+  position: absolute;
+  top:440px;
+  left:1150px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-4 {
+  position: absolute;
+  top:480px;
+  left:1150px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-5 {
+  position: absolute;
+  top:540px;
+  left:1050px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-6 {
+  position: absolute;
+  top:600px;
+  left:1000px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-7 {
+  position: absolute;
+  top:660px;
+  left:1050px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-8 {
+  position: absolute;
+  top:720px;
+  left:1050px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-9 {
+  position: absolute;
+  top:780px;
+  left:1250px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-10 {
+  position: absolute;
+  top:380px;
+  left:1200px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv2-11 {
+  position: absolute;
+  top:550px;
+  left:1400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv2-12 {
+  position: absolute;
+  top:630px;
+  left:1570px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv2-13 {
+  position: absolute;
+  top:750px;
+  left:1400px;
+  z-index: 79;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------------동아-------------*/
+#mydiv3-1 {
+  position: absolute;
+  top:280px;
+  left:2300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv3-2 {
+  position: absolute;
+  top:340px;
+  left:2350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv3-3 {
+  position: absolute;
+  top:410px;
+  left:2300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-4 {
+  position: absolute;
+  top:480px;
+  left:2200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-5 {
+  position: absolute;
+  top:540px;
+  left:2300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-6 {
+  position: absolute;
+  top:600px;
+  left:2350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-7 {
+  position: absolute;
+  top:660px;
+  left:2300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-8 {
+  position: absolute;
+  top:720px;
+  left:2300px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-9 {
+  position: absolute;
+  top:780px;
+  left:2400px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv3-10 {
+  position: absolute;
+  top:380px;
+  left:2150px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*--------4 한겨레--------*/
+
+#mydiv4-1 {
+  position: absolute;
+  top:280px;
+  left:3300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv4-2 {
+  position: absolute;
+  top:350px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv4-3 {
+  position: absolute;
+  top:400px;
+  left:3300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-4 {
+  position: absolute;
+  top:460px;
+  left:3400px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-5 {
+  position: absolute;
+  top:540px;
+  left:3300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-6 {
+  position: absolute;
+  top:600px;
+  left:3400px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-7 {
+  position: absolute;
+  top:660px;
+  left:3350px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-8 {
+  position: absolute;
+  top:720px;
+  left:3350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-9 {
+  position: absolute;
+  top:780px;
+  left:3300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv4-10 {
+  position: absolute;
+  top:380px;
+  left:3500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv4-11 {
+  position: absolute;
+  top:550px;
+  left:3400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+/*----------경향-------*/
+
+
+#mydiv5-1 {
+  position: absolute;
+  top:280px;
+  left:4400px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv5-2 {
+  position: absolute;
+  top:350px;
+  left:4150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv5-3 {
+  position: absolute;
+  top:400px;
+  left:4200px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-4 {
+  position: absolute;
+  top:460px;
+  left:4200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-5 {
+  position: absolute;
+  top:540px;
+  left:4300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-6 {
+  position: absolute;
+  top:600px;
+  left:4350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-7 {
+  position: absolute;
+  top:660px;
+  left:4300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-8 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-9 {
+  position: absolute;
+  top:780px;
+  left:4300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv5-10 {
+  position: absolute;
+  top:380px;
+  left:4500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+#mydiv5-11 {
+  position: absolute;
+  top:550px;
+  left:4400px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+#mydiv5-12 {
+  position: absolute;
+  top:720px;
+  left:4350px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------------한국----------*/
+
+#mydiv6-1 {
+  position: absolute;
+  top:280px;
+  left:5300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv6-2 {
+  position: absolute;
+  top:350px;
+  left:5350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv6-3 {
+  position: absolute;
+  top:400px;
+  left:5300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-4 {
+  position: absolute;
+  top:460px;
+  left:5200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-5 {
+  position: absolute;
+  top:540px;
+  left:5300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-6 {
+  position: absolute;
+  top:600px;
+  left:5350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-7 {
+  position: absolute;
+  top:660px;
+  left:5300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv6-8 {
+  position: absolute;
+  top:720px;
+  left:5400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+/*---------서울---------*/
+
+#mydiv7-1 {
+  position: absolute;
+  top:280px;
+  left:6300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv7-2 {
+  position: absolute;
+  top:350px;
+  left:6350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-3 {
+  position: absolute;
+  top:400px;
+  left:6300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-4 {
+  position: absolute;
+  top:460px;
+  left:6250px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-5 {
+  position: absolute;
+  top:540px;
+  left:6300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-6 {
+  position: absolute;
+  top:600px;
+  left:6350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-7 {
+  position: absolute;
+  top:660px;
+  left:6300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-8 {
+  position: absolute;
+  top:720px;
+  left:6400px;
+  z-index: 84;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-9 {
+  position: absolute;
+  top:780px;
+  left:6300px;
+  z-index: 83;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv7-10 {
+  position: absolute;
+  top:380px;
+  left:6500px;
+  z-index: 90;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*--------8 kbs-------*/
+
+#mydiv8-1 {
+  position: absolute;
+  top:280px;
+  left:7300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv8-2 {
+  position: absolute;
+  top:350px;
+  left:7350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv8-3 {
+  position: absolute;
+  top:400px;
+  left:7300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-4 {
+  position: absolute;
+  top:460px;
+  left:7200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-5 {
+  position: absolute;
+  top:540px;
+  left:7300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-6 {
+  position: absolute;
+  top:600px;
+  left:7350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv8-7 {
+  position: absolute;
+  top:660px;
+  left:7300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*---------9 mbc----------*/
+
+#mydiv9-1 {
+  position: absolute;
+  top:280px;
+  left:8300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv9-2 {
+  position: absolute;
+  top:350px;
+  left:8350px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv9-3 {
+  position: absolute;
+  top:400px;
+  left:8300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-4 {
+  position: absolute;
+  top:460px;
+  left:8200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-5 {
+  position: absolute;
+  top:540px;
+  left:8300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-6 {
+  position: absolute;
+  top:600px;
+  left:8350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv9-7 {
+  position: absolute;
+  top:660px;
+  left:8300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+/*------------10 sbs------------*/
+
+#mydiv10-1 {
+  position: absolute;
+  top:280px;
+  left:9300px;
+  z-index: 91;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+
+}
+
+
+#mydiv10-2 {
+  position: absolute;
+  top:350px;
+  left:9150px;
+  z-index: 100;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+
+
+#mydiv10-3 {
+  position: absolute;
+  top:400px;
+  left:9300px;
+  z-index: 89;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-4 {
+  position: absolute;
+  top:460px;
+  left:9200px;
+  z-index: 88;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-5 {
+  position: absolute;
+  top:540px;
+  left:9300px;
+  z-index: 87;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-6 {
+  position: absolute;
+  top:600px;
+  left:9350px;
+  z-index: 86;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(-3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+
+#mydiv10-7 {
+  position: absolute;
+  top:660px;
+  left:9300px;
+  z-index: 85;
+  background-color: #f1f1f1;
+  text-align: center;  
+  border: transparent;
+  -webkit-transform: rotate(3deg);
+  border-radius: 17px;
+  font-family: NotoSerifKR;
+}
+/*-------------*/
+
+#fakediv {
+  position: absolute;
+  top:460px;
+  left:9950px;
+  z-index: 88;
+  background-color: transparent;
+  text-align: center;  
+  border: transparent;
+  color: transparent;
+}
+
+#mydivheader {
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-left:25px;
+  padding-right:25px;
+  cursor: pointer;
+  z-index: 10;
+  background-color: #ffffff;
+  border: 1.5px solid black;
+  border-radius: 17px;
+  font-size: 16pt;
+  color: black;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0,0.8), 0 3px 15px 0 rgba(0,0,0,0.2);
+}
+
+#mydivheader:hover{
+	background-color: grey;
+	z-index: 120;
+}
+
+#masterdiv {
+	white-space:nowrap; 
+    overflow-x: auto; }
+
+ .chosun{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:350px
+}
+
+.jungang{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:1350px
+}
+
+.donga{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:2550px
+}
+
+.hani{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:3550px	
+}
+
+.khan{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:4500px	
+}
+
+.hankook{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:5500px	
+}
+
+.seoul{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:6550px	
+}
+
+.kbs{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:7550px	
+}
+
+.mbc{
+  position: absolute;
+  font-size: 17pt;
+  top:180px;
+  left:8550px	
+}
+
+.sbs{
+  position: absolute; 
+  font-size: 17pt;
+  top:180px;
+  left:9550px	
+}
+
+
+
+
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+    
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 40%;
+  z-index: 0;
+}
+
+
+#press {
+  white-space:nowrap; 
+    overflow-x: auto; }
+</style>
+<body>
+
+<h1>사건 22</h1>
+<img src="images/22.jpg" id="bg" alt="">
+<!-- <p class="index">헤드라인을 움직여 보세요 어쩌구</p> -->
+<!-- <p class="index">원하는/눈에띄는/재미있는 헤드라인을 찾아보세요!
+다 봤으면 버튼을 눌러 언론사별로도 보세요/ 오른쪽 상단 버튼을 눌러 언론사별로 볼 수 있습니다. or 정리된 모습을 보고 싶다면..</p> -->
+<div id= press>
+<p class="chosun">조선일보</p>
+<p class="jungang">중앙일보</p>
+<p class="donga">동아일보</p>
+<p class="hani">한겨레</p>
+<p class="khan">경향신문</p>
+<p class="hankook">한국일보</p>
+<p class="seoul">서울신문</p>
+<p class="kbs">KBS</p>
+<p class="mbc">MBC</p>
+<p class="sbs">SBS</p>
+
+</div>
+<p class="return"><a href ="https://sartre4751.github.io/case_100_main/case100_main.html" class="re">돌아가기</a></p>
+<!-- <p class="switch">바꾸기</p> -->
+
+<div id="fakediv"> 
+  ...
+</div>
+
+<!-------------조선------------- -->
+<div id="masterdiv">
+<div id="mydiv1-1">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/10/2020021001855.html" target="_blank">
+봉준호 '기생충', 美 아카데미 '작품상' 수상 - 조선일보</a> </div>
+</div>
+
+<div id="mydiv1-2">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/10/2020021002579.html" target="_blank">
+[공식]문재인 대통령 "봉준호 '기생충' 아카데미 4관왕 축하, 韓에 자부심과 용기"(전문)</a></div>
+</div>
+
+<div id="mydiv1-3">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/11/2020021102194.html" target="_blank">"봉준호 리스펙" 佛 황금종려상→美 작품상..101년 韓영화 역사 썼다 </a></div>
+</div>
+
+<div id="mydiv1-4">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/10/2020021001374.html" target="_blank">[속보] 봉준호 감독 '기생충', 아카데미 각본상 수상..."아시아 최초"</a> </div>
+</div>
+
+<div id="mydiv1-5">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/11/2020021102080.html" target="_blank">방탄소년단 뷔, '기생충' 아카데미 4관왕 축하 "우식씨 눈물 훔치는 거 잘 봤어요"</a></div>
+</div>
+
+<div id="mydiv1-6">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/11/2020021102789.html" target="_blank">식지 않는 '기생충' 열기… 아카데미 트로피, 돌잡이용으로도 판매 </a> </div>
+</div>
+
+<div id="mydiv1-7">
+  <div id="mydivheader"><a href="https://www.chosun.com/site/data/html_dir/2020/02/12/2020021200111.html" target="_blank"> 짜파구리, 지금 세계에서 가장 핫한 음식 - 조선일보
+</a></div>
+</div>
+
+<div id="mydiv1-8">
+  <div id="mydivheader"><a href="https://m.chosun.com/svc/article.html?sname=biz&contid=2020021101808" target="_blank">전 세계 스크린에 뜬 '짜파구리'… 농심 "고마워 기생충" </a></div>
+</div>
+
+
+<!-- ----------------중앙------------ -->
+
+<div id="mydiv2-1">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23702144" target="_blank">
+봉준호 '기생충' 작품상까지 4관왕…아카데미 역사 뒤집혔다</a> </div>
+</div>
+
+<div id="mydiv2-2">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23702410" target="_blank">
+'기생충' 아카데미 4관왕에 제작사 주가도 들썩</a></div>
+</div>
+
+<div id="mydiv2-3">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23703096" target="_blank">‘기생충’ 속 그 맛은? 짜파구리 조리법 동영상, 11개 언어로 제작</a></div>
+</div>
+
+<div id="mydiv2-4">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23705199" target="_blank">아카데미 다음날, 美서 6억 매출···기생충, 와호장룡 넘어서나</a> </div>
+</div>
+
+<div id="mydiv2-5">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23705518" target="_blank">나흘만에 주가 180% 뛰었다···주식시장 달구는 '기생충'</a></div>
+</div>
+
+
+
+<div id="mydiv2-6">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23703853" target="_blank">'기생충' 수상 순간…봉준호 아내는 아들 껴안고 펑펑 울었다</a></div>
+</div>
+
+<div id="mydiv2-7">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23702081" target="_blank">한국영화 첫 아카데미 수상 순간, 기생충 배우들 펄쩍 뛰었다</a></div>
+</div>
+
+<div id="mydiv2-8">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23706777" target="_blank">트럼프에 맞설 강력한 한방···아카데미가 '기생충' 원했다</a></div>
+</div>
+
+<div id="mydiv2-9">
+  <div id="mydivheader"><a href="https://news.joins.com/article/23708986" target="_blank">기생충 '채끝 짜파구리' 메뉴 등장, 美 2만1000원 韓 1만5000원  </a></div>
+</div>
+
+
+<!-- ----------------동아------------ -->
+
+<div id="mydiv3-1">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Culture/article/all/20200210/99620877/1" target="_blank">봉준호 ‘기생충’, 세계 영화 새역사 썼다…‘외국어 최초’ 작품상 4관왕
+ </a> </div>
+</div>
+
+<div id="mydiv3-2">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Culture/article/all/20200210/99618263/1" target="_blank">
+‘기생충’ 봉준호, 아카데미 감독상 수상…“할 일 끝났다고 생각했는데”
+ </a></div>
+</div>
+
+<div id="mydiv3-3">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Culture/article/all/20200210/99622183/2" target="_blank">‘기생충’ 수상에 이미경 CJ 부회장 “봉준호의 모든 것 좋아”</a></div>
+</div>
+
+
+<div id="mydiv3-4">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Politics/article/all/20200220/99793431/1" target="_blank">‘기생충’ 주인공들 만난 문대통령 “어려움 겪는 국민에 용기줘” </a> </div>
+</div>
+
+<div id="mydiv3-5">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Culture/article/all/20200210/99617484/1" target="_blank">아카데미 각본상 수상 ‘기생충’, 편집상 수상은 무산 </a></div>
+</div>
+
+<div id="mydiv3-6">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Entertainment/article/all/20200211/99630614/1" target="_blank">‘기생충’ 아카데미 4관왕에 각본집 판매량 최대 35배 급증</a> </div>
+</div>
+
+<div id="mydiv3-7">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Culture/article/all/20200219/99776830/1" target="_blank">봉준호 감독 “한국 산업계 모험 두려워하지 말아야”</a></div>
+</div>
+
+<div id="mydiv3-8">
+  <div id="mydivheader"><a href="https://www.donga.com/news/Culture/article/all/20200212/99649200/1" target="_blank">‘아카데미 4관왕’ 기생충 주역들 금의환향 “한국문화 알리겠다”</a> </div>
+</div>
+
+
+<!-- ----------------4 한겨레------------ -->
+
+<div id="mydiv4-1">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/culture/culture_general/927626.html" target="_blank">
+'기생충', 감독상까지 수상…아카데미 3관왕</a> </div>
+</div>
+
+<div id="mydiv4-2">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/culture/culture_general/928492.html" target="_blank">'기생충' 흥행 234% 증가…오스카 효과 '글래디에이터' 이후 최대
+</a></div>
+</div>
+
+<div id="mydiv4-3">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/society/society_general/928977.html" target="_blank">
+[포토] 청와대 찾은 '기생충'팀
+</a> </div>
+</div>
+
+<div id="mydiv4-4">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/culture/culture_general/928337.html" target="_blank">
+'기생충' 아카데미상 수상에 더 열광하는 이유</a></div>
+</div>
+
+
+<div id="mydiv4-5">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/culture/movie/927658.html" target="_blank">
+봉준호 “'기생충' 가장 한국적이어서 전 세계 매료한 듯”
+</a> </div>
+</div>
+
+<div id="mydiv4-6">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/society/society_general/928295.html" target="_blank">
+지자체 〈기생충〉 관광코스 개발이 부른 “가난 포르노” 논란</a></div>
+</div>
+
+
+<div id="mydiv4-7">
+  <div id="mydivheader"><a href="https://www.hani.co.kr/arti/culture/culture_general/927859.html" target="_blank">
+이미경 CJ 부회장이 왜 거기서 수상 소감을?
+</a></div>
+</div>
+
+
+
+<!-- ----------------5 경향------------ -->
+
+
+
+<div id="mydiv5-1">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002101326001" target="_blank">
+[속보]‘기생충’ 아카데미 주인공 되다…작품상까지 4관왕</a> </div>
+</div>
+
+<div id="mydiv5-2">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002111505001" target="_blank">
+'기생충' 아카데미 휩쓴 다음날···CJ ENM 구내식당에 등장한 '채끝 짜파구리'</a> </div>
+</div>
+
+<div id="mydiv5-3">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002191424001" target="_blank">
+봉준호 “화려한 기록보다 영화 자체가 기억됐으면”…‘기생충’ 기자회견
+</a> </div>
+</div>
+
+<div id="mydiv5-4">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002111330001" target="_blank">
+영화 ‘기생충’ 아카데미 4관왕으로 덩달아 웃는 대학들</a> </div>
+</div>
+
+<div id="mydiv5-5">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002201504001" target="_blank">
+ 봉준호 만난 문 대통령 “<기생충> 사회의식에 공감…불평등이 견고해져 새로운 계급처럼 느껴질 정도” </a> </div>
+</div>
+
+<div id="mydiv5-6">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002150600005" target="_blank">
+“지역 활성” “빈곤 장사”…기생충 관광상품화, 어떻게 생각하시나요 </a> </div>
+</div>
+
+<div id="mydiv5-7">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002112246005" target="_blank">
+아카데미, 왜 ‘기생충’에 끌렸나…공감·공간 그리고 자막</a> </div>
+</div>
+
+<div id="mydiv5-8">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002121633001" target="_blank">
+ “홍보대사, 기념관, 영화박물관”…고향 대구서 봉준호 마케팅 ‘후끈’</a> </div>
+</div>
+
+<!-- <div id="mydiv5-9">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202001070600025 " target="_blank">
+ [경향이 찍은 오늘]1월3일 추미애 장관 “가장 힘들고 어렵다 했던···”</a> </div>
+</div> -->
+
+<!-- ----------------6 한국------------ -->
+<div id="mydiv6-1">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002171620062624"target="_blank">
+'아카데미 4관왕' 기생충이 인도 영화 표절했다고?</a> </div>
+</div>
+
+<div id="mydiv6-2">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002111870046517" target="_blank">
+'기생충'이 오스카를 구했다
+</a></div>
+</div>
+
+<div id="mydiv6-3">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002101524783726" target="_blank">아카데미 4관왕 영화 '기생충' 촬영 장소를 가 볼까나</a></div>
+</div>
+
+<div id="mydiv6-4">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002200667747592" target="_blank">“우리 봉준호 감독” 박수 보낸 文대통령, 오늘 '기생충' 팀과 오찬</a> </div>
+</div>
+
+<div id="mydiv6-5">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002121784364463" target="_blank">시의적절한 '기생충' 배우들, 봉준호는 어떻게 찾아냈을까</a> </div>
+</div>
+
+<div id="mydiv6-6">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002171044383233" target="_blank">'기생충' 흥행 234% 폭증… 2001년 이후 최고 '오스카 효과'</a></div>
+</div> --> 
+
+<div id="mydiv6-7">
+  <div id="mydivheader"><a href="https://www.hankookilbo.com/News/Read/202002110950040386" target="_blank">'기생충' 덕에 '짜파구리' 열풍도…농심, 조리법 세계에 알린다</a> </div>
+</div>
+
+<!-- <div id="mydiv6-8">
+  <div id="mydivheader"><a href="http://news.khan.co.kr/kh_news/khan_art_view.html?art_id=202002232125015" target="_blank">라임 펀드 손실액 1조2000억+ α…투자자 절반 ‘60대 이상’</a> </div>
+</div> -->
+
+<!-- ----------------7 서울------------ -->
+
+<div id="mydiv7-1">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200210500131" target="_blank">
+“'기생충' 출연한 줄” 산드라 오, '한국인인 게 자랑스럽다'
+</a></div>
+</div>
+
+<div id="mydiv7-2">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200210500137" target="_blank">짜파구리 먹던 해리스, '기생충' 4관왕 수상에 두 팔 번쩍 축하</a></div>
+</div>
+
+<div id="mydiv7-3">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200210500160" target="_blank">문 대통령, 봉준호 감독에 축전 “국민에 자부심과 용기 줘”</a> </div>
+</div>
+
+<div id="mydiv7-4">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200212001019" target="_blank">Banjiha, 세계는 왜 주목하나</a> </div>
+</div>
+
+<div id="mydiv7-5">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200211001004" target="_blank">봉준호의 오스카 혁명</a> </div> 
+</div>
+
+ <div id="mydiv7-6">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200211500029" target="_blank">봉준호 수상소감, 거장 마틴 스콜세지 울렸다
+</a> </div>
+</div>
+
+<!-- ----------------8 kbs------------ -->
+
+
+<div id="mydiv8-1">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4378527" target="_blank">
+[생방송 심야토론] 기생충 쾌거! 한국영화 100년의 저력과 과제
+</a></div>
+</div>
+
+<div id="mydiv8-2">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4376309" target="_blank">'기생충'이 오스카 최우수작품상 수상? 천기누설?</a></div>
+</div>
+
+<div id="mydiv8-3">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4385464" target="_blank">문 대통령, 봉준호와 오찬…“점심 메뉴엔 아내 헌정 짜파구리도”</a> </div>
+</div>
+
+<div id="mydiv8-4">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4381062" target="_blank">촬영지·식품 등 인기…'기생충 신드롬' 어디까지?</a> </div>
+</div>
+
+<div id="mydiv8-5">
+  <div id="mydivheader"><a href="https://news.kbs.co.kr/news/view.do?ncd=4381062" target="_blank">촬영지·식품 등 인기…'기생충 신드롬' 어디까지?</a> </div> 
+</div>
+
+ <!-- <div id="mydiv8-6">
+  <div id="mydivheader"><a href="https://www.seoul.co.kr/news/newsView.php?id=20200211500029" target="_blank">봉준호 수상소감, 거장 마틴 스콜세지 울렸다
+</a> </div>
+</div> -->
+<!-- ----------------9 mbc------------ -->
+<div id="mydiv9-1">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/world/article/5659213_32640.html" target="_blank">
+'기생충' 아카데미 각본상 수상…아시아계 최초
+</a> </div>
+</div>
+
+<div id="mydiv9-2">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/news/2020/world/article/5659263_32640.html" target="_blank">
+'기생충' 아카데미 작품상까지 4관왕…영화사 새로 썼다</a></div>
+</div>
+
+<div id="mydiv9-3">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nw1400/article/5659287_32503.html" target="_blank"> 기생충, 美 아카데미 작품·감독상 등 4관왕 '쾌거'</a></div>
+</div>
+
+<div id="mydiv9-4">
+  <div id="mydivheader"><a href="hhttps://imnews.imbc.com/replay/2020/nwdesk/article/5661409_32524.html" target="_blank">봉테일보다 더 디테일?…재빠른 기생충 마케팅</a> </div>
+</div>
+
+<div id="mydiv9-5">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nw930/article/5659585_32517.html" target="_blank">美 국무부 대변인 "기생충, 오스카 4관왕 자격 충분"</a></div>
+</div>
+
+<div id="mydiv9-6">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nwdesk/article/5659403_32524.html" target="_blank">'오스카'를 변화시킨 기생충…"다양성에 눈떴다"</a> </div>
+</div>
+
+<div id="mydiv9-7">
+  <div id="mydivheader"><a href="https://imnews.imbc.com/replay/2020/nw1700/article/5659337_32510.html" target="_blank">'기생충' 오스카 4관왕…영화사 새로 썼다</a></div>
+</div>
+
+<!-- ----------------10 sbs------------ -->
+<div id="mydiv10-1">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005641575" target="_blank">
+영화 '기생충' 아카데미 각본상 수상…韓 영화 첫 오스카상</a> </div>
+</div>
+
+
+<div id="mydiv10-2">
+  <div id="mydivheader"><a href="https://ent.sbs.co.kr/news/article.do?article_id=E10009807020&plink=COPYPASTE&cooper=SBSENTERNEWS" target="_blank">'기생충' 신화의 숨은 주역 이미경…마이크 잡은 이유
+ </a></div>
+</div>
+
+<div id="mydiv10-3">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005641994" target="_blank">아카데미 '기생충' 숨은 공로자들…번역·통역의 힘</a> </div>
+</div>
+
+<div id="mydiv10-4">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005645331" target="_blank">"기생충!" 호명 순간 객석서 서로 껴안고 오열한 봉준호 아내와 아들 '포착'</a> </div>
+</div>
+
+
+<div id="mydiv10-5">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005643010" target="_blank">방탄소년단 "정말 축하드립니다"…봉준호 '기생충' 아카데미 수상 축하</a> </div>
+</div>
+
+<div id="mydiv10-6">
+  <div id="mydivheader"><a href="https://news.sbs.co.kr/news/endPage.do?news_id=N1005644077" target="_blank">
+'기생충' 영화 속 슈퍼 · 피자 가게, 바로 여기입니다!
+</a></div>
+</div>
+</div>
+<script>	
+dragElement(document.getElementById("mydiv1-1"));
+dragElement(document.getElementById("mydiv1-2"));
+dragElement(document.getElementById("mydiv1-3"));
+dragElement(document.getElementById("mydiv1-4"));
+dragElement(document.getElementById("mydiv1-5"));
+dragElement(document.getElementById("mydiv1-6"));
+dragElement(document.getElementById("mydiv1-7"));
+dragElement(document.getElementById("mydiv1-8"));
+dragElement(document.getElementById("mydiv1-9"));
+
+dragElement(document.getElementById("mydiv2-1"));
+dragElement(document.getElementById("mydiv2-2"));
+dragElement(document.getElementById("mydiv2-3"));
+dragElement(document.getElementById("mydiv2-4"));
+dragElement(document.getElementById("mydiv2-5"));
+dragElement(document.getElementById("mydiv2-6"));
+dragElement(document.getElementById("mydiv2-7"));
+dragElement(document.getElementById("mydiv2-8"));
+dragElement(document.getElementById("mydiv2-9"));
+dragElement(document.getElementById("mydiv2-10"));
+dragElement(document.getElementById("mydiv2-11"));
+dragElement(document.getElementById("mydiv2-12"));
+dragElement(document.getElementById("mydiv2-13"));
+
+dragElement(document.getElementById("mydiv3-1"));
+dragElement(document.getElementById("mydiv3-2"));
+dragElement(document.getElementById("mydiv3-3"));
+dragElement(document.getElementById("mydiv3-4"));
+dragElement(document.getElementById("mydiv3-5"));
+dragElement(document.getElementById("mydiv3-6"));
+dragElement(document.getElementById("mydiv3-7"));
+dragElement(document.getElementById("mydiv3-8"));
+dragElement(document.getElementById("mydiv3-9"));
+dragElement(document.getElementById("mydiv3-10"));
+
+dragElement(document.getElementById("mydiv4-1"));
+dragElement(document.getElementById("mydiv4-2"));
+dragElement(document.getElementById("mydiv4-3"));
+dragElement(document.getElementById("mydiv4-4"));
+dragElement(document.getElementById("mydiv4-5"));
+dragElement(document.getElementById("mydiv4-6"));
+dragElement(document.getElementById("mydiv4-7"));
+dragElement(document.getElementById("mydiv4-8"));
+dragElement(document.getElementById("mydiv4-9"));
+dragElement(document.getElementById("mydiv4-10"));
+dragElement(document.getElementById("mydiv4-11"));
+
+dragElement(document.getElementById("mydiv5-1"));
+dragElement(document.getElementById("mydiv5-2"));
+dragElement(document.getElementById("mydiv5-3"));
+dragElement(document.getElementById("mydiv5-4"));
+dragElement(document.getElementById("mydiv5-5"));
+dragElement(document.getElementById("mydiv5-6"));
+dragElement(document.getElementById("mydiv5-7"));
+dragElement(document.getElementById("mydiv5-8"));
+dragElement(document.getElementById("mydiv5-9"));
+dragElement(document.getElementById("mydiv5-10"));
+dragElement(document.getElementById("mydiv5-11"));
+dragElement(document.getElementById("mydiv5-12"));
+
+dragElement(document.getElementById("mydiv6-1"));
+dragElement(document.getElementById("mydiv6-2"));
+dragElement(document.getElementById("mydiv6-3"));
+dragElement(document.getElementById("mydiv6-4"));
+dragElement(document.getElementById("mydiv6-5"));
+dragElement(document.getElementById("mydiv6-6"));
+dragElement(document.getElementById("mydiv6-7"));
+
+dragElement(document.getElementById("mydiv7-1"));
+dragElement(document.getElementById("mydiv7-2"));
+dragElement(document.getElementById("mydiv7-3"));
+dragElement(document.getElementById("mydiv7-4"));
+dragElement(document.getElementById("mydiv7-5"));
+dragElement(document.getElementById("mydiv7-6"));
+dragElement(document.getElementById("mydiv7-7"));
+dragElement(document.getElementById("mydiv7-8"));
+dragElement(document.getElementById("mydiv7-9"));
+dragElement(document.getElementById("mydiv7-10"));
+
+dragElement(document.getElementById("mydiv8-1"));
+dragElement(document.getElementById("mydiv8-2"));
+dragElement(document.getElementById("mydiv8-3"));
+dragElement(document.getElementById("mydiv8-4"));
+dragElement(document.getElementById("mydiv8-5"));
+dragElement(document.getElementById("mydiv8-6"));
+dragElement(document.getElementById("mydiv8-7"));
+
+dragElement(document.getElementById("mydiv9-1"));
+dragElement(document.getElementById("mydiv9-2"));
+dragElement(document.getElementById("mydiv9-3"));
+dragElement(document.getElementById("mydiv9-4"));
+dragElement(document.getElementById("mydiv9-5"));
+
+dragElement(document.getElementById("mydiv10-1"));
+dragElement(document.getElementById("mydiv10-2"));
+dragElement(document.getElementById("mydiv10-3"));
+dragElement(document.getElementById("mydiv10-4"));
+
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+</body>
+</html>
+
